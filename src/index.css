@@ -86,6 +86,10 @@ body {
   margin-bottom: 0.6rem;
 }
 
+.number-limit {
+  color: red;
+}
+
 @media (max-width: 1150px) {
   .container {
     height: 90vh;

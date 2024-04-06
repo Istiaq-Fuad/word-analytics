@@ -12,7 +12,9 @@ export default function Stats({ stats }) {
 function Stat({ count, type }) {
   return (
     <div className="stat">
-      <span className="counter">{count}</span>
+      <span className={`counter ${count < 0 ? "number-limit" : ""}`}>
+        {count}
+      </span>
       <span>{type}</span>
     </div>
   );
